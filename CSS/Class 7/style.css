@@ -1,0 +1,151 @@
+/* .box-relative{
+    position: relative;
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: 30px;
+} */
+
+/* .container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #4a4848;
+}
+.box-absolute{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: coral;
+    padding: 10px;
+} */
+
+
+/* .fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+} */
+
+/* .sticky-header{
+    position: sticky;
+    top: 0;
+    background-color: orange;
+    padding: 10px;
+    z-index: 10;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* .navbar{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px 0px;
+} */
+/* 
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+} */
+
+/* .box1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.box2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.sidebar{
+    width: 200px;
+    position: sticky;
+    top: 20px;
+    background-color: #525050;
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.content{
+    flex: 1;
+}
+
+.long-text{
+    height: 2000px;
+    background-color: #f9f9f9;
+    padding: 20px;
+} */
+
+/* img{
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.container{
+    position: absolute;
+    top: 70px;
+    left: 400px;
+} */
+
+/* .container{
+    background-image: url("./assets/cover.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+/* ul li::marker{
+    content: "😫";
+} */
+
+
+.container{
+    /* background-image: url("./assets/cover.jpg"); */
+    width: 100%;
+    height: 300px;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background: url("./assets/cover.jpg") center no-repeat; */
+    /* background-size: cover; */
+    background: url("./assets/cover.jpg") center no-repeat;
+    background-size: cover;
+
+
+}

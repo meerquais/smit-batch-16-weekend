@@ -1,0 +1,104 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+
+/* p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic; */
+    /* text-transform: none;
+    text-decoration: line-through;
+    line-height: 30px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: -5px -6px  red;
+} */
+/* span{
+    text-decoration: underline double;
+    text-align: center;
+} */
+
+
+/* span{
+    color: blue;
+} */
+
+/* selector::pseudo-element {
+    property:value;
+} */
+
+
+.first-letter::first-letter{
+    color: chocolate;
+    font-size: 30px;
+}
+
+/* .first-line::first-line{
+    color: red;
+    font-size: 35px;
+} */
+span{
+    color: brown;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:link{
+    color: deeppink;
+    /* text-decoration: underline dashed; */
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: rgb(64, 182, 236);
+    text-decoration: underline;
+}
+
+/* p:hover{
+    color: red;
+    font-size: 40px;
+    background-color: pink;
+    text-shadow: 10px 5px 3px blue;
+} */
+
+button{
+    background-color: rgb(94, 197, 228);
+}
+
+button:active{
+    color: white;
+    background-color: black;
+}
+
+input:focus{
+    color: red;
+}
+
+.box1{
+    background-color: red;
+    /* width: 300px;
+    height: 200px; */
+    max-width: 400px;
+    height: 100px;
+
+
+}
+
+/* .box2{
+    background-color: green;
+    width: 300px;
+    height: 200px;
+
+
+} */
+

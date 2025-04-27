@@ -1,0 +1,167 @@
+/* ul{ */
+    /* list-style-type: none; */
+    /* list-style-position: inside; */
+
+    /* list-style: circle inside; */
+
+/* } */
+
+/* table{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 10px ;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+td{
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}  */
+
+
+/* table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    empty-cells: hide;
+}
+
+th ,td {
+    border: 1px solid #333;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+th{
+    background-color: #cccaca;
+}
+
+tr:hover{
+    background-color: #94d1da;
+}
+td:hover{
+    background-color: #104d57;
+    color: white;
+} */
+
+/* table{
+    border: 1px solid black;
+    empty-cells: hide;
+}
+td{
+    border: 1px solid red;
+} */
+
+/* input{
+    font-size: 30px;
+    color: red;
+    background-color: gray;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+    background-color: white;
+} */
+
+button{
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(54, 189, 212);
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(13, 87, 100);
+  
+}
+
+
+/* fieldset{
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+legend{
+    background-color: rgb(169, 174, 179);
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid  #dcdcdc;
+    border-radius: 10px;
+    padding: 10px;
+} */
+
+/* .box1{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+.box1Child{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1000;
+
+}
+.box1Child2{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+
+} */
+
+
+
+/* .box-relative{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+    top: 20px;
+    left: 30px;
+} */
+
+/* .container{ */
+    /* position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+}
+.box-absolute{
+    position: absolute;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    top: 2px;
+}
+.box2{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+} */
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+}

@@ -1,0 +1,289 @@
+/* .container{
+    background-color: aqua; */
+ /* background-image: url("./assets/cover.jpg"); */
+ /* background-repeat: no-repeat; */
+ /* background-position: center; */
+ /* background: url("./assets/cover.jpg") no-repeat center;
+ background-size: cover;
+    width: 100%;
+    height: 300px;
+} */
+
+/* body{
+    background: url("./assets/cover.jpg") no-repeat center;
+    background-attachment: scroll;
+
+} */
+
+
+/* @media media-type and (condition){
+
+} */
+/* 
+.container1{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+.container2{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+.container3{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+
+
+@media screen and (max-width: 769px){
+
+.container1{
+    background-color: brown;
+    display: none;
+}
+.container2{
+    background-color: orange;
+    display: none;
+
+}
+.container3{
+    background-color: pink;
+}
+}
+
+@media screen and (max-width:400px){
+
+.container1{
+    display: block;
+    background-color: aqua;
+}
+.container2{
+    display: block;
+    background-color: chocolate;
+}
+
+} */
+
+/* Mobile First */
+
+/* @media screen and (max-width:599px){
+    body{
+        background-color: yellow;
+    }
+} */
+
+    /* Tablet  */
+/* @media screen and (min-width:600px) and (max-width:899px){
+
+    body{
+        background-color: orange;
+    }
+
+} */
+
+/* Desktop */
+
+/* @media screen and (min-width:900px){
+    body{
+        background-color: purple;
+    }
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+ /* navbar  */
+
+/* .navbar{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.nav-links li a:hover{
+    color: #f0a500;
+} */
+
+ /* section 1  */
+
+
+
+/* Mobile  ( max 599px)  */
+
+/* @media screen and (max-width:599px){ */
+
+    /* navbar  */
+    /* .nav-links{
+        flex-direction: column;
+        background-color: #444;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .nav-links li{
+        margin: 10px 0px;
+    } */
+
+    /* section 1  */
+
+
+/* } */
+
+/* Tablet (600px to 899px)  */
+
+/* @media screen and (min-width: 600px) and (max-width: 899px){
+
+
+    .nav-links{
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .nav-links{
+        justify-content: flex-end;
+        gap:25px
+    }
+} */
+
+/* .parent{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+
+}
+
+.child1 ,.child2 , .child3{
+    width: 300px;
+    height: 250px;
+}
+.child1{
+    background-color: red;
+}
+.child2{
+    background-color: green;
+}
+.child3{
+    background-color: blue;
+} */
+
+/* .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: center;
+}
+.flex-container div{
+    width: 100px;
+    height:50px;
+    background-color: aqua;
+} */
+
+/* .flex-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap;
+}
+
+.flex-container div{
+    width: 300px;
+    height: 200px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: red;
+}
+.box5{
+    background-color: blue;
+}
+.box6{
+    background-color: green;
+}
+.box7{
+    background-color: red;
+}
+.box8{
+    background-color: pink;
+}
+.box9{
+    background-color: blue;
+} */ 
+
+
+
+/* .flex-container{
+    display: flex;
+}
+
+.flex-container div{
+    width: 300px;
+    height:200px;
+}
+.box1{
+    background-color: red;
+    order: 3;
+}
+.box2{
+    background-color: blue;
+    order: 1;
+}
+.box3{
+    background-color: green;
+    order: 2;
+} */
+
+.flex-container{
+    display: flex;
+}
+.box1{
+    width: 300px;
+    height: 100px;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    background-color: red;
+}
+.box2{
+    width: 300px;
+    height: 100px;
+    /* flex-grow: 2; */
+    flex-shrink: 2;
+    background-color: green;
+}
+.box3{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    /* flex-grow: 95; */
+}

@@ -1,0 +1,89 @@
+/* h1{
+    color: chartreuse;
+} */
+
+/* // universal selector  */
+/* 
+*{
+    color: rebeccapurple;
+} */
+
+/* // Type/Element Selector  */
+
+/* h1{
+    color: aquamarine;
+}
+
+p{
+    color: blueviolet;
+}
+
+ul{
+    color: red;
+} */
+
+
+/* .red{
+    color: red;
+} */
+
+/* h1 , p , a , h2 {
+    color: rebeccapurple;
+} */
+
+/* div > h1 {
+    color: chocolate;
+}
+
+div p{
+    color: blue;
+} */
+
+/* 
+p {
+    color: red;
+}
+
+h1 {
+    color: #31a588;
+}
+
+a{
+    color: rgb(0, 128, 255);
+}
+
+h2{
+    color: hsl(200, 100%, 70%);
+} */
+
+/* h1{
+    background-color: rgba(255, 0, 0, 0.2);
+    /* opacity: 0.1; */
+/* } */ 
+
+/* p{
+    font-size: 34px;
+    font-family: 'Lucida23 Sans', 'Lucid32a Sans Regular', 'Lucida2 Grande', 'Lucida2 Sans Unicode', Geneva2, Verdana2, sans-serif;
+}
+h1{
+    font-size: 16px;
+} */
+
+
+/* .bold{
+    font-weight: bold;
+
+}
+.italic{
+    font-style: italic;
+} */
+
+p{
+    /* text-transform: uppercase; */
+    /* text-decoration: underline double; */
+    line-height: 20px;
+    /* letter-spacing: 4px; */
+    word-spacing: 10px;
+    text-align: end;
+
+}

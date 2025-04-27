@@ -1,0 +1,130 @@
+/* h1{
+    color: blue;
+} */
+
+/* span{
+    color: red;
+} */
+
+h1::first-letter{
+    color: blueviolet;
+}
+
+/* span{
+    color: red;
+} */
+
+/* p::first-line{
+    color: red;
+    font-size:40px;
+} */
+
+
+a:link{
+    color: pink;
+    /* text-decoration: underline; */
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+    text-decoration: overline;
+}
+
+/* a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    font-size: 20px;
+} */
+
+button:active{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
+
+input:focus{
+    color: red;
+}
+
+input{
+    color: blue;
+}
+
+/* .box1{
+    background-color: red;
+    height: 300px;
+    min-width: 250px;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 400px;
+   
+} */
+
+/* .box1child{
+    background-color: black;
+    height: 300px;
+    width: 1100px;
+} */
+
+
+/* .box2{
+    background-color: blue;
+} */
+
+
+.box1{
+    /* background-color: red; */
+    /* max-height: 300px; */
+    /* max-width: 400px; */
+    /* min-width: 400px; */
+    /* overflow: scroll; */
+
+
+    width: 400px;
+    height: 300px;
+    /* border-width: 1px 3px 6px 9px;
+    border-style: solid;
+    border-color: blue; */
+    border: 1px solid red;
+    /* margin: 20px 0px 30px 60px; */
+    /* padding: 40px; */
+    margin: 20px auto;
+    text-align: center;
+    /* margin: 0px auto; */
+
+
+}
+.box2{
+    /* background-color: blue; */
+    max-height: 300px;
+    /* max-width: 400px; */
+    min-width: 400px;
+
+
+
+}
+
+/* a{
+    display: block;
+}
+p{
+    display: inline-block;
+} */
+
+.box3{
+    display: inline-block;
+    background-color: red;
+    width: 150px;
+    height: 100px;
+}
+.box4{
+    display: inline-block;
+    background-color: blue;
+    width: 150px;
+    height: 100px;
+}

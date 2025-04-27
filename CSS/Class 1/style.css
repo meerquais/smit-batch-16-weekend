@@ -1,0 +1,79 @@
+/* selector ===> h1/h2
+Declearation ===> { property: value;     }
+
+
+
+h1{
+    color: red;
+} */
+
+/* // Universal Selector  */
+
+/* *{
+    color: blue;
+} */
+
+/* // Element Selector  */
+/* h1{
+    color: pink;
+} */
+/* // Class Selector  */
+/* .para{
+    color: aqua;
+} */
+/* // ID Selector  */
+/* #para{
+    color: brown;
+} */
+
+/* grouping selector
+
+h1 , h2 , p{
+    color: chocolate;
+} */
+/* // Child Selector  */
+/* .container > h1 , .container > p{
+    color: cornflowerblue;
+} */
+/* // Descendent Selector  */
+/* div p {
+    color: red;
+} */
+
+
+
+/* agasdasdfasdfasdfasdfsdfasd */
+
+
+/* div > h1 , div > p{
+    color: blue;
+}
+
+.container h1 , .container p {
+    color: red;
+} */
+
+h1{
+    color:hsl(259, 35%, 56%);
+    /* background-color:rgba(255, 0, 0, 0.1); */
+    /* opacity: 0.3; */
+    background-color: rgba(255, 0, 0,0.9);
+}
+
+span{
+    background-color: aqua;
+    
+}
+
+.para{
+    /* font-size: 36px; */
+    font-family: Verdana;
+}
+.para >span{
+    font-weight:bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.heading{
+    /* font-size: 10px; */
+}
