@@ -1,0 +1,29 @@
+/* .parent{
+    font-size: 20px;
+}
+.child{
+    font-size: 1.4em;
+} */
+
+/* 
+html{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 2rem;
+}
+p{
+    margin-bottom: 1.5rem;
+} */
+
+/* input{
+    width: 20ch;
+} */
+
+.box1{
+    max-width: 500px;
+    background-color: red;
+    max-height: 100px;
+    overflow: scroll;
+}

@@ -1,0 +1,23 @@
+/* .my-btn{
+    color: red;
+    background-color: greenyellow;
+    border: none;
+}
+.my-btn:hover{
+    color: white;
+    background-color: aqua;
+    border: 1px solid red;
+} */
+
+
+.myCSS{
+   
+    /* justify-content: space-between; */
+    border: 1px solid red;
+}
+.customCSS{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+    width: 500px !important;
+}
