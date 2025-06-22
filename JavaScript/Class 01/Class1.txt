@@ -1,0 +1,90 @@
+High Level 
+Dynamically Typed
+Interpreted 
+
+
+1 - High Level - ka matlab yeh hai ke aapko memory
+management aur low-level cheezon ka khayal nahi rakhna padta q k yeh system handle karta hai.
+
+2 - Interpreted - matlab JavaScript code ko brower line by line read karke turant execute karta hai. bina kisi compile step ke.
+
+3- Mult-paradigm - matlab aap JavaScript mein procedural , object-oriented aur functional programming kar sakte ho.
+
+Usecase of JavaScript 
+
+1.Form Validation : Server ko load karne se pehle error batana.
+2.DOM Manipulation : Webpages ke kisi bhi element ko dynamically change karna.
+3. AJAX/Fetch API: Server se bina page reload kiye data lana. (like in search suggestions.)
+4.Creating Interactive UI Components: 
+
+Image Sliders
+Popups/Modals
+Tabs/Dropdowns
+live search filter.
+
+MERN = MongoDB , Express.js , React.js and Node.js
+
+Sumary :
+
+JavaScript : Heart of modern web.
+Runs in browser (frontend)+ on the server ( backend = node.js )
+high-level , interpreted, dynamic language.
+created in 1995
+Powerful due to modern ES6+ features.
+
+
+
+Variable!
+
+
+JavaScript mein variable aik container ( box / dabba )hota hai jo data ko temporarily store/save karta hai.
+
+
+JavaScript code run hota hai 2 steps mein:
+
+Step 1 : Memory Allocation ( Creation Phase )
+Step 2 : Code Execution
+
+
+Step 1 :
+
+JavaScript pehlay variables ko scan karta hai.
+Var ko undefined assign kar deta hai.
+functions ko completely load karta hai memory mein.
+
+Step 2:
+Actual values assign hoti hain.
+Execution top to bottom hota hai.
+
+
+Hoisting : Javascript mein var variables hoist ho jaate hain.
+
+Variable Names : 
+
+Valid : 
+
+camelCase ( userName ) 
+snake_case ( user_name )
+PascalCase ( UserName )
+$
+
+
+Invalid :
+
+Numbers se start
+Reserved words 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
