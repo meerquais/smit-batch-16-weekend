@@ -1,0 +1,38 @@
+Interpreter ( ignition in v8 )
+
+Event driven programming
+
+single-threaded but asynchorous
+
+
+two types of data types!
+
+Primitive types and Non-Primitive data types :
+
+Primitive Data Types :
+
+Number
+String
+Boolean
+Null
+Undefined
+
+Non-Primitive Data Types :
+
+Array
+Objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
