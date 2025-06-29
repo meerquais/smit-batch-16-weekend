@@ -1,0 +1,53 @@
+Arithmetic Operators
+
+Add = +
+Subtract = -
+Multiply = *
+Divide = /
+Modulus = %
+
+
+var a = 5;
+
+var b = a++ + ++a - --a + a-- + ++a;
+
+
+
+var x = 3; / 4 / 5 / 4 / 3 /4 
+	4 + 4 +4 + 4 + 4 + 4 = 24
+var y = ++x     +     x++    +     --x    +    x--    +    ++x    +   x;
+
+var m = 10; / 11 / 12 / 11 / 10 / 11
+	10 + 11 + 12 - 10 + 11 = 34 
+let result = m++     +     m++   +    m--    -    --m    +    ++m
+ 
+var z = 2;  / 3 / 4 / 4 / 3/2 / 1 / 2 / 2 /3 /3
+	      3 	+     3 	+  4       +      3      +     3      -     1      -   2           + 2       + 3   +  3 = 21
+let output = ++z    +    z++     +     z     +     --z    +    z--     -     --z    -     ++z    +    z    +    ++z     +     z++
+
+
+
+BODMAS = 
+
+B = Brackets 
+O = Order
+D = Divison
+M = Multiplication
+A = Addition
+S = Subtraction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
