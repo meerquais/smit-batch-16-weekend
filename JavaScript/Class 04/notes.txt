@@ -5,3 +5,16 @@ Most Common Comparison Operators!
 
 != barabar nahi? => 5 != "6" => true
 !== barabar nahi ya type different? 5 !== "6" => true
+
+>             = greater than = zyada hai? => 5 > 3 => true
+<             = less than = chhota hai? =>5 < 3 => false
+>=    = greater than equal to => 5 >= 5 => true
+<=    = less than equal to => 4 <= 5 => true
+
+
+
+
+
+
+
+
