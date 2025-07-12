@@ -1,0 +1,7 @@
+Most Common Comparison Operators!
+
+==  brabar hai?( loose check ) => 5 == "5" => True
+=== barabar hai + type bhi? ( Strict check )=>5 === "5" => false
+
+!= barabar nahi? => 5 != "6" => true
+!== barabar nahi ya type different? 5 !== "6" => true
