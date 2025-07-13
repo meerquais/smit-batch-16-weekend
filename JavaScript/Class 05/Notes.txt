@@ -1,0 +1,18 @@
+AND Operator ( && ) - dono condition true honi chahiye.
+
+OR Operator ( || ) - Koi bhi ek condition true honi chahiye.
+
+1 ) agar student hai aur attedance >= 75 => "allowed" ,warna not allowed.
+
+2) agar user login hai ya rememberMe active hai => "Welcome".
+
+3) agar time < 12 => "Good Morning" , 12-18 => "Afternoon" , warna "Evening"
+
+4) agar role = admin && password sahi => "dashboard open karo"
+
+
+
+
+
+
+
