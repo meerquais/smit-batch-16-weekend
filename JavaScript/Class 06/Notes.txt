@@ -1,0 +1,26 @@
+Array Methods!
+
+
+.push() ==> Add element at the end.
+
+.pop()  ==> remove the element from the end.
+
+.unshift() ==> add element at the start.
+
+.shift()  ==> remove the element from the start.
+
+
+.slice(start , end) ===> makes a copy of original array.
+
+.splice(start , deleteCount, [] ) ===> Modify/Change karna.
+
+ 
+
+
+
+
+
+
+
+
+
