@@ -1,0 +1,21 @@
+/* .highlight{
+  background-color: red;
+} */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+input{
+  padding: 6px 10px;
+  margin-left: 4px;
+}
+li{
+  margin: 6px 0;
+}
