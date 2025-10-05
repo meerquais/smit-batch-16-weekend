@@ -1,0 +1,117 @@
+:root {
+    /* --whiteColor: white; 
+    --primaryColor: #295FB7;
+    --lightPrimary: #ECF4FD;
+    --blackColor: black;
+    --grayColor: lightgray; */
+    
+
+    --whiteColor: white; 
+    --primaryColor: rgb(252, 96, 122);
+    --lightPrimary: pink;
+    --blackColor: black;
+    --grayColor: lightgray;
+}
+
+.navbar {
+    background-color: var(--whiteColor) !important;
+}
+
+.navbar-brand {
+    color: var(--primaryColor);
+}
+
+.navBtn {
+    background-color: transparent;
+    border: none;
+    padding: 8px 10px;
+}
+
+.signInBtn {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.heroSection {
+    min-height: 70vh;
+    background-color: var(--primaryColor);
+}
+
+.heroBGDiv {
+    background-image: url("./assets/heroSectionImg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width: 80%;
+}
+
+.heroSection .container {
+    width: 70%;
+}
+
+.heroSection h1, .heroSection p {
+    color: var(--whiteColor);
+}
+
+.heroSectionCardsDiv {
+    background-color: var(--whiteColor);
+}
+
+.heroSectionCardsDiv p {
+    color: var(--blackColor);
+}
+
+.borderDiv {
+    border-right: 1px solid var(--grayColor);
+    padding-right: 20px;
+}
+
+.heroRoundDiv {
+    background-color: var(--whiteColor);
+    border-radius: 50%;
+    padding: 4px;
+    color: var(--blackColor);
+}
+
+.heroRoundDiv p {
+    color: var(--blackColor);
+    margin-bottom: 0;
+    padding: 6px;
+}
+
+.servicesSection {
+    background-color: var(--lightPrimary);
+}
+
+.servicesContentDiv h2 {
+    color: var(--primaryColor);
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+.cardDiv {
+    padding: 60px 0;
+    background-color: var(--whiteColor);
+    margin-top: 10px;
+}
+
+.cardDiv i {
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 20px;
+    font-size: 30px;
+}
+
+.cardDiv.active {
+    background-color: var(--primaryColor);
+}
+
+.cardDiv.active i {
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+}
+
+.cardDiv.active h4, .cardDiv.active p {
+    color: var(--whiteColor);
+}

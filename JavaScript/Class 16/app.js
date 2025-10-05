@@ -195,7 +195,6 @@ var display = document.getElementById("disply");
 
 
 function append(value){
-
   display.value += value
 
 }

@@ -36,6 +36,22 @@ M = Multiplication
 A = Addition
 S = Subtraction
 
+Priority 
+
+Parenthese = () = Highest 
+Exponentiation = ** = high
+Multiply/Divide = * / = medium
+Add/Subract = + - = low
+
+
+String + String = Concatenation
+
+String + Number = Number is converted  to string than concatenated.
+
+Number + Number = Addition hota hai.
+
+use +=    ==> Existing string mein new string add karta hai.
+
 
 
 

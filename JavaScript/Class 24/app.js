@@ -145,7 +145,7 @@ function showTasks(){
     list.innerHTML += "<li>" + tasks[i]+ " <button onclick='editTask("+i+")'>Edit</button>" + "<button onclick='deleteTask("+i+")'>Delete</button></li>";
   }
 
-  
+
 }
 
 
