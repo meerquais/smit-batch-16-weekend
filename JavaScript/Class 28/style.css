@@ -1,0 +1,45 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:0;
+}
+
+.container{
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display{
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+button{
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start{
+  background-color: green;
+  color: white;
+}
+#stop{
+  background-color: red;
+  color: white;
+}
+#reset{
+  background-color: rgb(224, 163, 20);
+  color: white;
+}
