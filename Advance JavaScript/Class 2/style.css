@@ -1,0 +1,12 @@
+body{
+  background-color: white;;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.dark{
+  background-color: #222;
+  color: white;
+}
