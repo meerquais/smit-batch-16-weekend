@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <h1>Hello World!</h1> -->
+
+
+  <div id="app">
+    <!-- Login Page -->
+
+    <div id="login-page" class="page">
+      <h2>Login</h2>
+      <form id="login-form">
+
+        <input type="text" required
+        id="login-username" placeholder="Username">
+        <input type="password" required
+        id="login-password" placeholder="password">
+        <button type="submit">Login</button>
+        
+      </form>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    </div>
+
+    <!-- Signup page  -->
+
+    <div id="signup-page" class="page hidden">
+
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+
+        <input type="text" required placeholder="Username"
+        id="signup-username">
+        <input type="password" required placeholder="Password"
+         id="signup-password">
+
+         <button type="submit">Sign Up</button>
+
+
+      </form>
+      <p>Already have an account? <a href="#" id="show-login">Login!</a></p>
+
+
+
+    </div>
+
+
+    <!-- Dashboard page  -->
+
+    <div id="dashboard-page" class="page hidden">
+
+      <header>
+        <div class="user-info">
+          <span id="logged-in-user">Welcome, </span>
+        </div>
+
+        <h2>Food Dashboard</h2>
+        <button id="logout-btn">Logout</button>
+      </header>
+
+      <div class="dashboard-content">
+
+        <div class="food-form-section">
+          <h3>Add new Food</h3>
+          <form id="food-forms">
+
+            <input type="hidden" id="food-id">
+            <input type="text" id="food-name"
+            placeholder="Food Name" required>
+            <textarea id="food-description"
+            placeholder="Description"></textarea>
+            <input type="text" id="food-image"
+            placeholder="Image URL (Optional)">
+            <button id="food-form-button" type="submit">Add Food</button>
+          </form>
+        </div>
+
+        <div class="foods-list-secion">
+          <h3>Your Foods</h3>
+          <div id="foods-list" class="foods-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="./app.js"></script>
+</html>
