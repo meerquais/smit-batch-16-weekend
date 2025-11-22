@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- navigation bar  -->
+   <nav class="navbar">
+    <div class="nav-brand">SocialApp</div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="#" id="home-link" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="dashboard-link" class="nav-link">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" id="auth-link" class="auth-btn">Login</a>
+      </li>
+    </ul>
+   </nav>
+
+   <!-- main Content  -->
+
+   <main id="main-content">
+
+    <!-- home page  -->
+
+    <section id="home-page" class="page active">
+      <h1>All Posts</h1>
+      <div id="posts-container" class="posts-container">
+        <!-- posts dynamically get hongy  -->
+      </div>
+    </section>
+
+
+    <section class="page" id="dashboard-page">
+      <h1>Your Dashboard</h1>
+      <div id="user-posts-container" class="posts-container">
+        <!-- User Posts dynamically get Hongy  -->
+      </div>
+
+      <div class="post-form-container">
+        <h2>Create New Post</h2>
+        <form  id="post-form">
+          <input type="hidden" id="post-id">
+          <div class="form-group">
+            <label for="post-title">Title:</label>
+            <input type="text" id="post-title" required>
+          </div>
+          <div class="form-group">
+            <label for="post-description">Description:</label>
+            <textarea name="" id="post-description" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="post-image">Image URL</label>
+            <input type="text"  id="post-image" required>
+          </div>
+          <button type="submit" id="submit-post">Submit Post</button>
+          <button type="submit" id="cancel-edit">Cancel</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- auth modal  -->
+
+    <div id="auth-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="auth-tabs">
+          <button id="login-tab" class="tab-btn active">Login</button>
+          <button id="signup-tab" class="tab-btn">Sign Up</button>
+        </div>
+        <div id="login-form" class="auth-form active">
+          <h2>Login</h2>
+          <form id="login-form-content">
+            <div class="form-group">
+              <label for="login-username">Username:</label>
+              <input type="text" id="login-username" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" required>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <div id="signup-form" class="auth-form">
+          <h2>Sign Up</h2>
+          <form id="signup-form-content">
+            <div class="form-group">
+              <label for="signup-username">Username:</label>
+              <input type="text" id="signup-username" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password:</label>
+              <input type="password" id="signup-password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+   </main>
+
+
+  
+</body>
+
+<script src="./app.js"></script>
+</html>
