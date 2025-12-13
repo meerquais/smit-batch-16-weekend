@@ -1,0 +1,77 @@
+:root{
+  --card-bg: #f8f9fa;
+  --muted: #6c757d;
+}
+
+body{
+  background: linear-gradient(180deg, #eef2f7 0%, #ffffff 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #222;
+}
+
+.card-width{
+  width: 100%;
+  max-width: 420px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(17,24,30,0.6);
+}
+
+.result{
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.04);
+  background-color: #fff;
+}
+
+.result h4{
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.result .temp-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.result .temp-row img{
+  width: 64px;;
+  height: 64px;
+}
+
+.result h1{
+  margin: 0;
+  font-size: 2.1rem;
+  line-height: 1;
+}
+
+.small-info{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.error{
+  color: #a61e2b;
+  background: #fff5f6;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(166,30,43,0.08);
+}
+
+.spinner-center{
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+}
