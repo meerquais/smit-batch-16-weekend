@@ -1,0 +1,90 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading */
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Inputs */
+input {
+  width: 300px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Focus effect */
+input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons */
+button {
+  width: 300px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Login button */
+#loginBtn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Google button */
+#googleBtn {
+  background-color: #ffffff;
+  color: #444;
+}
+
+/* Hover */
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Forgot password link */
+a {
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  input,
+  button {
+    width: 90%;
+  }
+}
