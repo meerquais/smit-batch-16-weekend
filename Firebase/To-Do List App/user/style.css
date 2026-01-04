@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  color: #333;
+}
+
+h2 {
+  color: #2d3436;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+#task {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+#task:focus {
+  border-color: #6c5ce7;
+}
+
+#addBtn {
+  padding: 12px 24px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+#addBtn:hover {
+  background-color: #a29bfe;
+}
+
+/* Post/Todo List Container */
+#posts {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual Post Card */
+.post-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #6c5ce7; /* Accent border */
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: scale(1.01);
+}
+
+.post-card span {
+  font-size: 1.05rem;
+  color: #2d3436;
+  word-break: break-all;
+  margin-right: 10px;
+}
+
+/* Button Grouping */
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+button.edit-btn, button.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.edit-btn {
+  background-color: #e1f5fe;
+  color: #039be5;
+}
+
+.delete-btn {
+  background-color: #ffebee;
+  color: #e53935;
+}
+
+button:hover {
+  opacity: 0.8;
+}

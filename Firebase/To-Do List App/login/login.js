@@ -8,9 +8,13 @@ const googleBtn = document.getElementById("googleBtn");
 async function handleRedirect(userId) {
     const snap = await getDoc(doc(db,"users" , userId));
 
-    if(!snap.exists()) return;
+    if(!snap.exists())return;
 
       const data = snap.data();
+      console.log(data);
+      
+     
+      
 
       if(!data.isVerfied){
         Swal.fire({
@@ -39,6 +43,7 @@ const password = document.getElementById("password").value;
     const res = await signInWithEmailAndPassword(auth , email , password);
 
     await handleRedirect(res.user.uid)
+
 
   } catch (error) {
     Swal.fire({

@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forget Password</title>
+  <title>User Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Reset Password</h2>
 
-  <input type="email" name="" id="email" placeholder="Enter Email">
-  <button id="resetBtn">Send Reset Link</button>
+  <h2>Your Todos!</h2>
+
+  <input type="text" id="task" placeholder="Add your Task">
+  <button id="addBtn">Add</button>
+
+
+  <div id="posts"></div>
   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="module" src="./reset.js"></script>
+<script type="module" src="user.js"></script>
 </html>

@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  gap: 20px;
+}
+input{
+  width: 300px;
+  padding: 5px 20px;
+  
+}
+
+button{
+  border: none;
+  background-color: rgb(71, 144, 227);
+  padding: 10px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+}
