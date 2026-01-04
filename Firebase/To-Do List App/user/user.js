@@ -38,6 +38,9 @@ async function loadPosts() {
 
   const q = query(collection(db,"post"), where("uid", "==" , uid), orderBy("createdAt" , "desc"));
 
+  console.log("triggered!");
+  
+
 
   const snap = await getDocs(q);
 

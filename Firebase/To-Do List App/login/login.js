@@ -4,34 +4,42 @@ import { auth , db , GoogleAuthProvider , signInWithEmailAndPassword , signInWit
 const loginBtn = document.getElementById("loginBtn");
 const googleBtn = document.getElementById("googleBtn");
 
-
 async function handleRedirect(userId) {
-    const snap = await getDoc(doc(db,"users" , userId));
 
-    if(!snap.exists())return;
+  const ref = doc(db,"users" , userId);
+  const snap = await getDoc(ref);
 
-      const data = snap.data();
-      console.log(data);
-      
-     
-      
+  console.log(userId);
+  console.log(snap.exists());
+  console.log(snap.data());
 
-      if(!data.isVerfied){
-        Swal.fire({
+
+  if(!snap.exists()){
+    Swal.fire({
+  title: "No Record",
+  text: "User Record doesn't exist!",
+  icon: "Error"
+});
+return;
+  }
+
+  const data = snap.data();
+  if(data.isVerfied !== true){
+    Swal.fire({
   title: "Not Verified",
   text: "Admin has not yet Approved.",
   icon: "info"
 });
 return;
-      }
+  }
 
-
-      if(data.role === "admin"){
-        window.location.href = "../admin/admin.html";
-      }else{
-        window.location.href ="../user/user.html"
-      }
-
+  if(data.role ==="admin"){
+    window.location.href = "../admin/admin.html"
+  }else{
+    window.location.href = "../user/user.html"
+  }
+  
+  
 }
 
 
@@ -54,33 +62,34 @@ const password = document.getElementById("password").value;
   }
 });
 
-
-googleBtn.addEventListener("click" , async()=>{
-
-const email = document.getElementById("email").value;
-const password = document.getElementById("password").value;
-
+googleBtn.addEventListener("click" , async ()=>{
 const provider = new GoogleAuthProvider();
 
-try {
-   const res = await signInWithPopup(auth, provider);
+  try {
+    const res = await signInWithPopup(auth, provider);
+    const userRef = doc(db,"users",res.user.uid);
+    const snap = await getDoc(userRef);
 
-   await setDoc(doc(db,"users", res.user.uid), {
-    email:res.user.email,
-    fullname:res.user.displayName || "",
-    role:"user",
-    isVerified:false
-   })
+    if(!snap.exists()){
+      await setDoc(userRef , {
+        email:res.user.email,
+        fullName: res.user.displayName || "",
+        role:"user",
+        isVerified:false,
+        createdAt:Date.now()
+      })
+    }
 
-   await handleRedirect(res.user.uid)
-} catch (error) {
-  Swal.fire({
+    await handleRedirect(res.user.uid)
+
+  } catch (error) {
+
+    swal.fire({
   title: "Error",
   text: error.message,
   icon: "error"
-});
-}
-
-
+})
+    
+  }
 })
 
