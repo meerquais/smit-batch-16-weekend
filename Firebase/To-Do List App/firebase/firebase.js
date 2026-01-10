@@ -27,14 +27,13 @@
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyDC_FFoIsuK-Yi31idDloJ1eXQOVaKLkHM",
-    authDomain: "to-do-list-application-bef79.firebaseapp.com",
-    projectId: "to-do-list-application-bef79",
-    storageBucket: "to-do-list-application-bef79.firebasestorage.app",
-    messagingSenderId: "992484101122",
-    appId: "1:992484101122:web:d3a86e5fb17e5f01126b1b"
+    apiKey: "AIzaSyDcQT9Zc2Rggy9cDK4rbg4Pb7nbwm-GcBE",
+    authDomain: "smit-todo-list-df236.firebaseapp.com",
+    projectId: "smit-todo-list-df236",
+    storageBucket: "smit-todo-list-df236.firebasestorage.app",
+    messagingSenderId: "870435571448",
+    appId: "1:870435571448:web:985ec18394996e4fa41d0d"
   };
-
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app)

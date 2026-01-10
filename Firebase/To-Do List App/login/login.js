@@ -24,7 +24,7 @@ return;
   }
 
   const data = snap.data();
-  if(data.isVerfied !== true){
+  if(data.isVerified !== true){
     Swal.fire({
   title: "Not Verified",
   text: "Admin has not yet Approved.",

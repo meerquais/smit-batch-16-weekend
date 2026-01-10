@@ -9,12 +9,33 @@ import { auth , db , onAuthStateChanged,
         updateDoc,
         doc,
         serverTimestamp
+        , signOut
  } from "../firebase/firebase.js";
 
 
 let uid = null;
 
 const addBtn = document.getElementById("addBtn");
+
+document.getElementById("logoutBtn").addEventListener("click" , async ()=>{
+
+  try {
+    await signOut(auth)
+    Swal.fire({
+  title: "User Logged out successfully!",
+  icon: "success"
+});
+  } catch (error) {
+    Swal.fire({
+  title: "Error",
+  icon: "success",
+  text: error.message
+});
+  }
+})
+
+
+
 
 
 onAuthStateChanged(auth, async (user)=>{
@@ -36,16 +57,23 @@ async function loadPosts() {
 
   posts.innerHTML = "";
 
-  const q = query(collection(db,"post"), where("uid", "==" , uid), orderBy("createdAt" , "desc"));
+  const q = query(collection(db,"posts"), where("uid", "==" , uid), orderBy("createdAt" , "desc"));
 
   console.log("triggered!");
   
 
 
-  const snap = await getDocs(q);
+  const snap = await getDocs(q); 
+  const snapShot = await getDocs(collection(db,"posts"))
+
+  
+
+    
 
   snap.forEach((p)=>{
     const data = p.data();
+  
+    
 
     const div = document.createElement("div");
     div.classList.add("post-card"); // Add this
@@ -64,7 +92,7 @@ async function loadPosts() {
 
       await updateDoc(doc(db,"posts" , p.id), {
         text:val,
-        updateAt : serverTimestamp()
+        updatedAt : serverTimestamp()
       });
 
       loadPosts();
@@ -96,8 +124,8 @@ addBtn.addEventListener("click", async ()=>{
   await addDoc(collection(db,"posts") , {
     uid,
     text:task.value,
-    createAt: serverTimestamp(),
-    updateAt: null
+    createdAt: serverTimestamp(),
+    updatedAt: null
   });
 
 
