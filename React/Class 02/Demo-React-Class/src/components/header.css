@@ -1,0 +1,19 @@
+.nav{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 20px 0;
+}
+
+.list ul{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.list ul li{
+  text-decoration: none;
+  list-style: none;
+}
