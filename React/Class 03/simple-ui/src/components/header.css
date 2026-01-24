@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 10px 0px;
+    position: sticky;
+}
+
+.menu ul{
+  display: flex;
+  gap: 15px;
+}
+.menu ul li{
+  list-style: none;
+}
