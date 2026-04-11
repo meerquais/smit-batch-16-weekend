@@ -1,0 +1,29 @@
+@layer utilities {
+  .gradient-brand {
+    @apply bg-gradient-to-r from-violet-600 via-fuchsia-500 to-sky-500;
+  }
+
+  .gradient-sunset {
+    @apply bg-gradient-to-br from-amber-500 via-rose-500 to-indigo-600;
+  }
+
+  .gradient-ocean {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-700;
+  }
+
+  .gradient-forest {
+    @apply bg-gradient-to-r from-emerald-500 to-teal-700;
+  }
+
+  .gradient-midnight {
+    @apply bg-gradient-to-br from-slate-900 via-violet-950 to-slate-900;
+  }
+
+  .glass-panel {
+    @apply rounded-2xl border border-white/20 bg-white/10 shadow-xl backdrop-blur-md dark:border-white/10 dark:bg-black/20;
+  }
+
+  .glass-card {
+    @apply rounded-xl border border-white/25 bg-white/15 backdrop-blur-md dark:border-white/10 dark:bg-black/25;
+  }
+}

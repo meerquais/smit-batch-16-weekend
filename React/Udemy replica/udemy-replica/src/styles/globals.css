@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+
+  --color-glass-border: rgb(255 255 255 / 0.12);
+  --color-glass-border-dark: rgb(0 0 0 / 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-svh antialiased font-sans text-slate-800 dark:text-slate-100;
+    font-family: var(--font-sans);
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 45%, #fdf4ff 100%);
+  }
+
+  html.dark body {
+    background: linear-gradient(135deg, #0a0a0f 0%, #0f172a 40%, #1e1b4b 100%);
+  }
+
+  #root {
+    @apply min-h-svh w-full max-w-none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@import './gradients.css';
+@import './animations.css';

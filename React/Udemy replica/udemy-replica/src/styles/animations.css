@@ -1,0 +1,43 @@
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgb(148 163 184 / 0.15) 25%,
+    rgb(148 163 184 / 0.35) 50%,
+    rgb(148 163 184 / 0.15) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.dark .animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 0.06) 25%,
+    rgb(255 255 255 / 0.12) 50%,
+    rgb(255 255 255 / 0.06) 75%
+  );
+  background-size: 200% 100%;
+}

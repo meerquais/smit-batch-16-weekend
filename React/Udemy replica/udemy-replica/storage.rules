@@ -1,0 +1,9 @@
+rules_version = '2';
+// File uploads use Cloudinary, not Firebase Storage. Enable Firebase Storage only if you add it back.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
