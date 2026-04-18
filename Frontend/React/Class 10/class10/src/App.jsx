@@ -30,7 +30,7 @@ function App() {
 
     // const {count , increment , decrement,reset} = useCounter(10);
 
-    const [name , setName] = useLocalStorage("username", )
+    const [name , setName] = useLocalStorage("username", "")
     const [age , setAge] = useLocalStorage("age", 18)
 
   return (
